@@ -1,4 +1,6 @@
+.gitignore
 default/files/*
 .DS_Store
 ._*
 all/themes/tbsk/changelog.txt
+tbsk
