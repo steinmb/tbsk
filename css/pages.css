@@ -20,7 +20,7 @@ body {
 
 #page-wrapper {
   background-image: url(../960.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 }
 
 #page {
