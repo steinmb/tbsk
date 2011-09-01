@@ -19,6 +19,8 @@ body {
 }
 
 #page-wrapper {
+  background-image: url(../960.png);
+  background-repeat: no-repeat;
 }
 
 #page {
@@ -71,22 +73,19 @@ body {
 }
 
 #name-and-slogan /* Wrapper for website name and slogan */ {
-  padding: 20px 0 0 10px;
 }
 
 h1#site-name,
 div#site-name /* The name of the website */ {
+  font-size: 3.571em;
+  line-height: 1em; /* bruk denne om ikke site name går over to linjer */
+  font-family: helvetica;
   margin: 0;
-  font-size: 2em;
-  line-height: 1.3em;
 }
 
 #site-name a:link,
 #site-name a:visited {
-  font-family: helvetica;
   color: #fff;
-  text-decoration: none;
-  font-size: 50px;
   font-weight: normal;
 }
 
