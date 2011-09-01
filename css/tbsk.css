@@ -1,0 +1,293 @@
+.ikkebryt {
+  white-space: nowrap;
+}
+/* Grunnleggende tabell styling */
+#content-area .node table,
+.maxtable table {
+  font-size: 12px;
+  width: 100%;
+ }
+ 
+thead th {
+   background: #EBECE3;
+   padding: 10px 10px 3px 10px;
+   font-size: 14px;
+   text-transform: uppercase;
+ }
+
+table td {
+  padding: 3px 10px 10px 10px;
+}
+
+tr.even, tr.odd {
+  background: #fff;
+}
+
+td.active {
+  background-color: #fff;
+}
+
+table caption {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Styling av tabeller men mere selektivt */
+
+th.views-field-field-event-date-value,
+th.views-field-field-seildato-value {
+  white-space: nowrap;
+}
+
+.views-field-field-nummer-value {
+  text-align: right;
+}
+
+.sidebar td {
+  padding: 3px 0 10px 0;
+  font-size: 12px;
+}
+
+.sidebar td.views-field-field-seildato-value,
+td.views-field-field-loggen-fart-value {
+  padding-right: 12px;
+}
+
+/*
+ * Images styling
+ */
+ img.imagecache,
+ .node-teaser .field-field-video img {
+   float: left;
+   margin: 0 30px 20px 0;
+ }
+ 
+.field-field-artikkelbilde-extra img,
+.floated img,
+.view-Spot-logg-bilder img {
+   float: left;
+   margin-left: 20px;
+   margin-bottom: 10px;
+ }
+
+.field-field-artikkelbilde-extra {
+  background: #EBECE3;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ACACA6;
+} 
+
+.clearall {
+  clear: both;
+}
+
+.submitted {
+}
+
+/*
+ * Definerer en generell tekstbasert knapp.
+ */
+.button {
+  width: 150px;
+  font-size: 18px;
+}
+
+.button.right {
+  float: right;
+  text-align: right;
+}
+
+.button a {
+  padding: 3px 10px;
+}
+
+.button a:link,
+.button a:visited {
+  color: #6699CC;
+  font-family: helvetica, arial;
+}
+
+.button a:hover {
+ background: #6699CC;
+ color: #eee;
+ text-decoration: none;
+ border: 1px solid #555;
+}
+
+.debug {
+  border: 2px dotted red;
+}
+
+.field-label {
+  font-weight: bold;
+}
+
+/* Jcarousel */
+.jcarousel-clip-horizontal ul {
+  padding: 0;
+  margin: 0;
+}
+
+#block-views-loggen_bilder-block_1 .jcarousel-container-horizontal {
+  width: 450px;
+}
+
+#block-views-loggen_bilder-block_1 .jcarousel-clip-horizontal {
+  width: 450px;
+  height: 133px;
+}
+
+#block-views-loggen_bilder-block_1 .jcarousel-item-horizontal {  
+  width: 133px;
+  height: 133px;
+  margin-right: 20px;
+}
+
+.views_slideshow_singleframe_teaser_section {
+  height: 142px;
+}
+
+.views_slideshow_singleframe_pager.numbered {
+  background: #6699CC;
+  color: #fff;
+  font-family: helvetica;
+  padding: 5px 3px;
+  border: 1px solid #ddd;
+}
+
+.views_slideshow_singleframe_pager.numbered a {
+  color: #fff;
+  text-align: center;
+}
+
+.views_slideshow_singleframe_pager.numbered a.activeSlide {
+  font-size: 18px;
+}
+
+/* Panels */
+#mini-panel-forside_karusell .jcarousel-container-horizontal {
+  width: 430px;
+}
+
+#mini-panel-forside_karusell .jcarousel-clip-horizontal {
+  width: 430px;
+  height: 130px;
+}
+
+#mini-panel-forside_karusell .jcarousel-item-horizontal {
+width: 130px;
+  height: 130px;
+  margin-right: 20px;
+}
+
+#block-panels_mini-forside_karusell .panel-col-first {
+  width: 507px;
+}
+
+#block-panels_mini-forside_karusell .panel-col-last {
+  width: 243px;
+  float: right;
+}
+
+#block-panels_mini-forside_karusell .view-Loggen-rotate {
+  padding-left: 20px;
+}
+
+#block-panels_mini-forside_karusell .views-field-title {
+  text-transform: uppercase;
+}
+
+#block-panels_mini-forside_karusell .views-field-field-mindag-value p {
+  margin: 0;
+}
+
+.sidebar .weather .image,
+.front .weather .image {
+  display: none;
+}
+
+.region-content-top .weather {
+  width: 180px;
+  float: left;
+  margin-right: 30px;
+  font-size: 12px;
+  color: #333;
+}
+
+ul.metar_data {
+  margin: 0;
+  padding: 0;
+}
+
+ul.metar_data li {
+  list-style: none;
+}
+
+/* Service link module */
+.service-links {
+  font-size: 12px;
+  clear: both;
+  background: #EBECE3;
+  padding: 10px 20px 5px 20px;
+  border-bottom: 1px solid #ACACA6;
+}
+
+.service-links img {
+  vertical-align: text-bottom;
+}
+
+.service-links ul.links {
+  display: inline;
+  vertical-align: top;
+}
+
+/* IMCE styling */
+#content-area .defaultSkin table.mceLayout tr.mceFirst td {
+  background: #EBECE3;
+  border-top: 1px solid #ACACA6;
+}
+
+#content-area .defaultSkin table.mceLayout tr.mceLast td {
+  background: #EBECE3;
+}
+
+#content-area .defaultSkin .mceButton {
+  border: 1px solid #ACACA6;
+}
+
+#content-area .defaultSkin a.mceButtonActive, 
+#content-area .defaultSkin a.mceButtonSelected {
+  background-color: #6699CC;
+  border: 1px solid #2A3D5C;
+}
+
+.content .defaultSkin table, 
+.content .defaultSkin tbody, 
+.content .defaultSkin a, 
+.content .defaultSkin img, 
+.content .defaultSkin tr, 
+.content .defaultSkin div, 
+.content .defaultSkin td, 
+.content .defaultSkin iframe, 
+.content .defaultSkin span, 
+.content .defaultSkin *, 
+.content .defaultSkin .mceText {
+  color: #333;
+}
+
+div#calpopup {
+  width: 460px;
+}
+
+#block-panels_mini-forside_karusell table {
+  margin: 0;
+}
+
+#block-panels_mini-forside_karusell {
+  font-size: 12px;
+}
+
+#block-panels_mini-forside_karusell .view-footer {
+  padding-left: 10px;
+}

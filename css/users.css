@@ -1,0 +1,58 @@
+#user-region1 {
+  width: 300px;
+  float: left;
+  margin: 0 20px 20px 0;
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#user-region2 {
+  width: 417px;
+  float: left;
+}
+
+.view-article-created table {
+  width: 100%;
+}
+
+#user-region2 table {
+  margin-top: 0;
+}
+
+.user-picture {
+}
+
+.user-picture img {
+  float: none;
+  margin: 0 20px 20px 0;
+}
+
+.user-picture .picture.missing {
+  width: 250px;
+  height: 200px;
+  border: 2px solid #ddd;
+  padding: 5px;
+  float: none;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  color: #999;
+  background: url(../images/user.png) no-repeat 60px 20px;
+}
+
+.profile {
+  clear: none;
+}
+
+.profile h3 {
+  border: none;
+}
+
+#user_loggen {
+  clear: both;
+}
+
+.view-user-bilder img {
+  float: left;
+  margin: 0 20px 20px 0;
+}

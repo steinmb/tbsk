@@ -1,0 +1,146 @@
+/* $Id: nodes.css,v 1.6 2009/11/02 15:37:29 johnalbin Exp $ */
+
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+
+ .node p {
+   margin: 0 0 16px 0;
+ }
+
+.node h2 {
+  margin: 16px 0 10px 0;
+}
+
+.node h3 {
+  margin: 16px 0 8px 0;
+}
+
+.node h4,
+.node h5,
+.node h6 {
+  margin: 16px 0 3px 0;
+}
+
+.node p img {
+  margin: 20px 0 10px 0;
+}
+
+.node .field-field-artikkelbilde {
+  margin: 0 0 20px 0;
+}
+
+.node /* Node wrapper */ {
+  margin: 0 0 50px 0;
+  padding-bottom: 5px;
+}
+
+.node-sticky /* A sticky node (displayed before others in a list) */ {
+}
+
+.node-unpublished /* Unpublished nodes */ {
+  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed underneath the content. */ {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.node-by-viewer /* A node created by the current user */ {
+}
+
+.node-teaser /* A node displayed as teaser */ {
+  border-bottom: 1px solid #ACACA6;
+}
+
+/* All nodes are given a node-type-FOO class that describes the type of
+ * content that it is. If you create a new content type called
+ * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+ */
+.node-type-page /* Page content node */ {
+}
+
+.node-type-story /* Story content node */ {
+}
+
+.node h2.title /* Node title */ {
+}
+
+.node .title a /* Node title */ {
+  color: #4C4C4C;
+}
+
+.node .title a:hover {
+  color: #6699CC;
+}
+
+.marker /* "New" or "Updated" marker for content that is new or updated for the current user */ {
+  color: #c00;
+}
+
+.node .picture /* The picture of the node author */ {
+}
+
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture {
+  position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+}
+
+.node .meta /* Wrapper for submitted and terms data */ {
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 13px;
+}
+
+.node .submitted /* The "posted by" information */ {
+  color: #999;
+}
+
+.node .terms /* Node terms (taxonomy) */ {
+  padding-left: 16px;
+}
+
+.node .content /* Node's content wrapper */ {
+  margin-top: 10px;
+}
+
+.node-type-event .content p {
+  clear: both;
+}
+
+.node-type-event.node-teaser .content p {
+  clear: left;
+}
+
+.node .meta ul.links {
+  background: none;
+  display: inline;
+  padding: 0;
+}
+
+.node ul.links /* Node links. See also the ul.links declaration in the pages.css. */ {
+  background: #EBECE3;
+  display: block;
+  padding: 10px 20px 5px;
+}
+
+.preview .node /* Preview of the content before submitting new or updated content */ {
+  /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+.node li {
+  margin-bottom: 8px;
+}

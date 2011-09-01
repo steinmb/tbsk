@@ -1,0 +1,165 @@
+/* $Id: fields.css,v 1.3 2009/08/12 08:03:52 johnalbin Exp $ */
+
+/**
+ * @file
+ * Field Styling
+ */
+
+fieldset {
+  border: 1px solid #EBECE3;
+  padding: 30px 13px 13px 14px;
+}
+
+/*
+ * Field types
+ */
+ 
+fieldset legend {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+fieldset legend a {
+  position: absolute;
+  margin-top: 9px;
+  left: 0;
+  }
+
+html.js fieldset.collapsible {
+}
+
+html.js fieldset.collapsible legend {
+  margin: 0;
+  padding: 0;
+}
+
+html.js fieldset.collapsed {
+  border: 1px solid #ddd;
+  padding: 13px;
+  margin-bottom: 10px;
+}
+
+.field /* Wrapper for any CCK field. */ {
+  margin-bottom: 3px;
+}
+
+.field-type-link {
+  background: #eee;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.field-type-link {
+  margin-top: 30px;
+}
+
+.field-type-link .field-items {
+}
+ 
+.group-when-where {
+  width: 336px;
+  float: right;
+  margin: 0 0 20px 30px;
+  background: #EBECE3;
+  border: 1px solid #ACACA6;
+  padding: 5px;
+} 
+
+.field-type-datetime /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */ {
+  text-align: left;
+}
+
+.field-type-datetime .field-items {
+} 
+
+.field-items {
+/*  margin-left: 20px; */
+}
+
+.field-type-datetime .field-items .field-item {
+}
+
+.node-type-brettseilerkurs .field-type-datetime  {
+  clear: right;
+  width: 338px;
+}
+
+.field-field-ledigeplasser {
+  width: 148px;
+  float: left;
+  background: #F78D32;
+  color: #EBECE3;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+}
+
+.field-type-datetime,
+.field-type-date {
+  font-size: 12px;
+}
+
+.fieldgroup.group-info {
+  width: 253px;
+  float: right;
+  margin: 0 0 10px 20px;
+  padding:12px 13px 13px 14px;
+  font-size: 12px;
+}
+
+.logguser {
+  margin-bottom: 12px;
+  background: #EBECE3;
+  padding: 5px 12px;
+}
+
+.group-hva-ble-brukt {
+}
+
+#calpopup .field {
+  float: none;
+  font-size: 13px;
+}
+
+.field-type-filefield /* Field from filefield module */ {
+}
+
+.field-type-nodereference {
+}
+
+.node-type-brettseilerkurs .field-type-nodereference {
+  clear: left;
+}
+
+.field-type-number-decimal {
+}
+
+.field-type-number-float {
+}
+
+.field-type-number-integer {
+}
+
+.field-type-text {
+}
+
+.field-type-userreference {
+}
+
+div.fieldgroup .content {
+  padding-left: 0;
+}
+
+/*
+ * Named fields
+ */
+
+.field-field-FIELDNAME /* Underscores in field name are replaced with dashes. */ {
+}
+
+.field-field-artikkelbilde {
+  margin-bottom: 14px;
+}
+
+.node-type-event .field-field-artikkelbilde {
+  float: left;
+}
