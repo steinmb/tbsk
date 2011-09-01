@@ -29,8 +29,14 @@
   margin: 20px 0 10px 0;
 }
 
-.node .field-field-artikkelbilde {
+.build-mode-full .field-field-artikkelbilde {
+  float: none;
   margin: 0 0 20px 0;
+}
+  
+.build-mode-teaser .field-field-artikkelbilde {
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 .node /* Node wrapper */ {
