@@ -57,12 +57,22 @@ td.views-field-field-loggen-fart-value {
 /*
  * Images styling
  */
+ 
+.imagecache-thumb,
+.imagecache-Small {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+.views-row-9  .imagecache-thumb {
+  margin-right: 0;
+}
+
 .field-field-artikkelbilde-extra img,
 .floated img,
 .view-Spot-logg-bilder img {
    float: left;
-   margin-left: 20px;
-   margin-bottom: 10px;
+   margin: 0 20px 10px 0;
  }
 
 .field-field-artikkelbilde-extra {

@@ -231,7 +231,11 @@ a:active {
  */
 table {
   border-collapse: collapse;
-  /* width: 100%; */ /* Prevent cramped-looking tables */
+  width: 100%; /* Prevent cramped-looking tables */
+}
+
+#content-area table {
+  margin: 0 0 1em 0;
 }
 
 th,
