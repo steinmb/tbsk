@@ -55,14 +55,22 @@ html.js fieldset.collapsed {
 
 .field-type-link .field-items {
 }
- 
-.group-when-where {
-  width: 336px;
+
+.node .fieldgroup {
+  padding: 0;
   float: right;
-  margin: 0 0 20px 30px;
-  background: #EBECE3;
+  width: 298px;
+  margin: 0 0 20px 20px;
   border: 1px solid #ACACA6;
-  padding: 5px;
+  background: #EBECE3;
+}
+
+.node .fieldgroup .content {
+  padding: 10px 10px 0;
+  margin: 0;
+}
+  
+.group-when-where {
 } 
 
 .field-type-datetime /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */ {
@@ -77,11 +85,6 @@ html.js fieldset.collapsed {
 }
 
 .field-type-datetime .field-items .field-item {
-}
-
-.node-type-brettseilerkurs .field-type-datetime  {
-  clear: right;
-  width: 338px;
 }
 
 .field-field-ledigeplasser {
