@@ -1,19 +1,34 @@
 .profile {
 }
 
+ul.profile {
+  list-style: none;
+  padding: 20px 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+ul.profile li {
+  padding-top: 10px;
+  border-bottom: 1px solid #eee;
+}
+
 .profile h3 {
   border: none;
 }
 
 #user-region1 {
-  width: 278px;
+  width: 298px;
   float: left;
   margin: 0 20px 20px 0;
   background: #eee;
   border: 1px solid #ccc;
-  padding: 10px;
 }
 
+#user-region1-inner {
+  padding: 10px;
+}
+  
 #user-region2 {
   width: 380px;
   float: left;
@@ -21,6 +36,11 @@
 
 #user-region2 table {
   margin-top: 0;
+}
+
+.imagecache-thumb, .imagecache-Small {
+  float: none;
+  margin: 0;
 }
 
 .user-picture {
@@ -43,9 +63,13 @@
   background: url(../images/user.png) no-repeat 60px 20px;
 }
 
-.view-user-bilder img {
+.view-user-bilder .views-row {
   float: left;
-  margin: 0 20px 20px 0;
+  margin: 10px 20px 0 0;
+}
+
+.view-user-bilder .views-row-4 {
+  margin-right: 0;
 }
 
 .user_log {

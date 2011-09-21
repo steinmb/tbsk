@@ -46,42 +46,46 @@ global $base_url, $base_path, $base_root;
 ?>
 <div class="clearfix profile">
   <div id="user-region1" class="clearfix">
-  
-    <div class="user-picture">
-      <?php if ($account->picture): ?>
-        <?php print $profile['user_picture']; ?>
-      <?php else: ?>
-        <h2 class="picture missing"><?php print t('Brukerbilde mangler'); ?></h2>
-      <?php endif; ?>
-    </div> <!--user-picture-->
+
+    <div id="user-region1-inner">
+      <div class="user-picture">
+        <?php if ($account->picture): ?>
+          <?php print $profile['user_picture']; ?>
+        <?php else: ?>
+          <h2 class="picture missing"><?php print t('Brukerbilde mangler'); ?></h2>
+        <?php endif; ?>
+      </div> <!--user-picture-->
       
-    <table>
-      <tbody>
-        <?php if ($account->profile_real_name): ?>
-          <tr class="first odd">
-            <td class="tittel"><?php print $account->profile_real_name_title; ?></td>
-            <td><?php print $account->profile_real_name; ?></td>
-          </tr>
-        <?php endif; ?>
-        <?php if ($account->profile_klubb): ?>
-          <tr class="even">
-            <td class="tittel"><?php print $account->profile_klubb_title ?></td>
-            <td><?php print $account->profile_klubb ?></td>
-          </tr>
-        <?php endif; ?>
-        <?php if ($account->profile_homepage): ?>
-          <tr class="odd">
-            <td class="tittel"><?php print $account->profile_homepage_title ?></td>
-            <td><?php print $account->profile_homepage ?></td>
-          </tr>
-        <?php endif; ?>
-          <tr class="last even">
-            <td class="tittel"><?php print $account->member_for_title; ?></td>
-            <td><?php print $account->member_for; ?></td>
-          </tr>
-      </tbody>
-    </table>
-      
+        <ul class="profile">
+          <?php if ($account->profile_real_name): ?>
+            <li>
+              <span class="field-label"><?php print $account->profile_real_name_title; ?>:</span>
+              <?php print check_plain($account->profile_real_name); ?>
+            </li>
+          <?php endif; ?>
+
+          <?php if ($account->profile_klubb): ?>
+            <li>
+              <span class="field-label"><?php print $account->profile_klubb_title ?>:</span>
+              <?php print check_plain($account->profile_klubb); ?>
+            </li>
+          <?php endif; ?>
+
+          <?php if ($account->profile_homepage): ?>
+            <li>
+              <span class="field-label"><?php print $account->profile_homepage_title; ?>:</span>
+              <?php print $account->profile_homepage ?>
+            </li>
+          <?php endif; ?>
+
+          <li>
+            <span class="field-label"><?php print $account->member_for_title; ?>:</span>
+            <?php print $account->member_for; ?>
+          </li>
+        </ul>
+            
+      </div>
+        
     <?php $finn = '<div class="view-content">'; ?>
     <?php $innhold = (views_embed_view('user_bilder', $display_id='default')); ?>
 
@@ -110,8 +114,9 @@ global $base_url, $base_path, $base_root;
           <a href="<?php print($base_path . 'user/' . $user->uid . '/edit/Personlig%20informasjon' . $destination); ?>">Rediger</a>
         </span>
       <?php endif; ?>
+
       <h3 class="title">Om meg</h3>
-      <?php print $account->profile_about_me; ?>
+      <?php print check_markup($account->profile_about_me, 1, TRUE); ?>
     <?php else: ?>
       <h3 class"title">Om meg</h3>
       <?php print t('Dessverre har ikke brukeren gitt noe informasjon om seg selv og hvor enorm god han/hun er til å seile.'); ?>
