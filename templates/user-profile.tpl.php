@@ -44,104 +44,100 @@
 global $base_url, $base_path, $base_root;
 
 ?>
-<div class="clearfix">
+<div class="clearfix profile">
   <div id="user-region1" class="clearfix">
+  
     <div class="user-picture">
       <?php if ($account->picture): ?>
         <?php print $profile['user_picture']; ?>
       <?php else: ?>
-        <div class="picture missing">
-          <h2>Brukerbilde mangler</h2>
-        </div>
+        <h2 class="picture missing"><?php print t('Brukerbilde mangler'); ?></h2>
       <?php endif; ?>
-      <div>
-        <table>
-          <tbody>
-            <?php if ($account->profile_real_name): ?>
-              <tr class="first odd">
-                <td class="tittel"><?php print $account->profile_real_name_title; ?></td>
-                <td><?php print $account->profile_real_name; ?></td>
-              </tr>
-            <?php endif; ?>
-            <?php if ($account->profile_klubb): ?>
-              <tr class="even">
-                <td class="tittel"><?php print $account->profile_klubb_title ?></td>
-                <td><?php print $account->profile_klubb ?></td>
-              </tr>
-            <?php endif; ?>
-            <?php if ($account->profile_homepage): ?>
-              <tr class="odd">
-                <td class="tittel"><?php print $account->profile_homepage_title ?></td>
-                <td><?php print $account->profile_homepage ?></td>
-              </tr>
-            <?php endif; ?>
-              <tr class="last even">
-                <td class="tittel"><?php print $account->member_for_title; ?></td>
-                <td><?php print $account->member_for; ?></td>
-              </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+    </div> <!--user-picture-->
+      
+    <table>
+      <tbody>
+        <?php if ($account->profile_real_name): ?>
+          <tr class="first odd">
+            <td class="tittel"><?php print $account->profile_real_name_title; ?></td>
+            <td><?php print $account->profile_real_name; ?></td>
+          </tr>
+        <?php endif; ?>
+        <?php if ($account->profile_klubb): ?>
+          <tr class="even">
+            <td class="tittel"><?php print $account->profile_klubb_title ?></td>
+            <td><?php print $account->profile_klubb ?></td>
+          </tr>
+        <?php endif; ?>
+        <?php if ($account->profile_homepage): ?>
+          <tr class="odd">
+            <td class="tittel"><?php print $account->profile_homepage_title ?></td>
+            <td><?php print $account->profile_homepage ?></td>
+          </tr>
+        <?php endif; ?>
+          <tr class="last even">
+            <td class="tittel"><?php print $account->member_for_title; ?></td>
+            <td><?php print $account->member_for; ?></td>
+          </tr>
+      </tbody>
+    </table>
+      
     <?php $finn = '<div class="view-content">'; ?>
     <?php $innhold = (views_embed_view('user_bilder', $display_id='default')); ?>
+
     <?php if ($position = strrpos ($innhold, $finn)): ?>
-      <h3>Nyeste bilder</h3>
+      <h3 class="title">Nyeste bilder</h3>
       <?php print (views_embed_view('user_bilder', $display_id='default')); ?>
     <?php else: ?>
-      Brukeren har ikke laste opp noen bilder.
+      <?php print t('Brukeren har ikke enda lastet opp noen bilder'); ?>
     <?php endif; ?>
-  </div>
+  </div> <!--user-region1-->
 
   <div id="user-region2" class="clearfix">
-    <div class="profile">
-      <?php if ($account->profile_about_me): ?>
-        <div class="title">
-          <?php if (! $logged_in): ?>
-            <div class="button right clearfix">
-              <a href="/user">Logg inn</a>
-            </div>
-          <?php endif; ?>
-        
-          <?php if ($account->uid == $user->uid): ?>
-            <span class="button right clearfix">
-              <a class="test" href="<?php print $base_path; ?>user/<?php print $user->uid;?>/edit/Personlig informasjon?destination=<?php print $base_path; ?>user/<?php print $user->uid; ?>">Rediger</a>
-            </span>
-          <?php endif; ?>
-          <h3>Om meg</h3>
-        </div> <!-- .title -->
-      
-        <?php print $account->profile_about_me; ?>
+    <?php $destination = drupal_get_destination(); ?>
+    <?php $path = drupal_get_path_alias($_GET['q']); ?>
+    <?php $destination = '?destination=' . $path; ?>
+    <?php dpm($destination); ?>
 
-      <?php else: ?>
-        <div class"title">
-          <?php if (! $logged_in): ?>
-            <div class="button right clearfix">
-              <a href="/user">Logg inn</a>
-            </div>
-          <?php endif; ?>
-          <h3>Om meg</h3>
-        </div>
-        <p>Dessverre har ikke brukeren gitt noe informasjon om seg selv og hvor enorm god han/hun er til å seile.</p>
+    <?php if (! $logged_in): ?>
+      <div class="button right clearfix">
+        <a href="/user">Logg inn</a>
+      </div>
+    <?php endif; ?>
+
+    <?php if ($account->profile_about_me): ?>
+      
+      <?php if ($account->uid == $user->uid): ?>
+        <span class="button right clearfix">
+          <a href="<?php print($base_path . 'user/' . $user->uid . '/edit/Personlig%20informasjon' . $destination); ?>">Rediger</a>
+        </span>
       <?php endif; ?>
-    </div> <!-- .profile -->
+      <h3 class="title">Om meg</h3>
+      <?php print $account->profile_about_me; ?>
+    <?php else: ?>
+      <h3 class"title">Om meg</h3>
+      <?php print t('Dessverre har ikke brukeren gitt noe informasjon om seg selv og hvor enorm god han/hun er til å seile.'); ?>
+    <?php endif; ?>
   
     <div class="user_log">
       <?php $finn = '<div class="view-content">'; ?>
       <?php $innhold = (views_embed_view('user_log', $display_id = 'block_1')); ?>
       <?php if ($position = strrpos ($innhold, $finn)): ?>
-        <div class="title">
-          <?php if ($account->uid == $user->uid): ?>
-            <span class="button right clearfix">
-              <a href="/node/add/loggen">Opprett logg</a>
-            </span>
-          <?php endif; ?>
-          <h3>Siste seilaser</h3>
-        </div>
+
+        <?php if ($account->uid == $user->uid): ?>
+          <span class="button right clearfix">
+            <a href="/node/add/loggen<?php print $destination; ?>">Opprett logg</a>
+          </span>
+        <?php endif; ?>
+
+        <h3 class="title">Siste seilaser</h3>
         <?php print (views_embed_view('user_log', $display_id = 'block_1')); ?>
+
       <?php else: ?>
-        <h3>Krise</h3>Brukeren har ikke registert en eneste seilas. Landligge eller kronisk latskap?
+        <h3 class="title"><?php print t('Siste seilaser'); ?></h3>
+        <?php print t('Brukeren har ikke registert noe fysikt aktivitet'); ?>
       <?php endif; ?>
     </div>
-  </div>
+
+  </div> <!--user-region2-->
 </div>
