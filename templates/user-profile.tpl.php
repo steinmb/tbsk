@@ -94,10 +94,8 @@ global $base_url, $base_path, $base_root;
   </div> <!--user-region1-->
 
   <div id="user-region2" class="clearfix">
-    <?php $destination = drupal_get_destination(); ?>
     <?php $path = drupal_get_path_alias($_GET['q']); ?>
     <?php $destination = '?destination=' . $path; ?>
-    <?php dpm($destination); ?>
 
     <?php if (! $logged_in): ?>
       <div class="button right clearfix">
