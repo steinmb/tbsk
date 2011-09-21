@@ -38,17 +38,18 @@ ul.profile li {
   margin-top: 0;
 }
 
-.imagecache-thumb, .imagecache-Small {
-  float: none;
-  margin: 0;
+.bilder {
+  background: #333;
+  color: #eee;
+  padding: 10px 0;
 }
 
 .user-picture {
 }
 
-.user-picture img {
-  float: none;
-  margin: 0 20px 20px 0;
+.profile .picture {
+  float: left;
+  margin: 0;
 }
 
 .picture.missing {
@@ -63,15 +64,25 @@ ul.profile li {
   background: url(../images/user.png) no-repeat 60px 20px;
 }
 
-.view-user-bilder .views-row {
-  float: left;
-  margin: 10px 20px 0 0;
+.imagecache-thumb, .imagecache-Small {
+  float: none;
+  margin: 0;
 }
 
-.view-user-bilder .views-row-4 {
+.view-user-bilder .views-row {
+  float: left;
+  margin: 10px 4px 0 0;
+}
+
+.view-user-bilder .views-row-6 {
   margin-right: 0;
 }
 
 .user_log {
   margin-top: 20px;
+}
+
+.missing_data {
+  padding: 0 10px;
+  color: #ccc;
 }

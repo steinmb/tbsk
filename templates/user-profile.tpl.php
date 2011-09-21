@@ -50,7 +50,7 @@ global $base_url, $base_path, $base_root;
     <div id="user-region1-inner">
       <div class="user-picture">
         <?php if ($account->picture): ?>
-          <?php print $profile['user_picture']; ?>
+          <?php print theme('imagecache', profile, $account->picture, $alt, $title, $attributes); ?>
         <?php else: ?>
           <h2 class="picture missing"><?php print t('Brukerbilde mangler'); ?></h2>
         <?php endif; ?>
@@ -85,16 +85,18 @@ global $base_url, $base_path, $base_root;
         </ul>
             
       </div>
-        
-    <?php $finn = '<div class="view-content">'; ?>
-    <?php $innhold = (views_embed_view('user_bilder', $display_id='default')); ?>
+    
+    <div class="bilder clearfix">
+      <?php $finn = '<div class="view-content">'; ?>
+      <?php $innhold = (views_embed_view('user_bilder', $display_id='default')); ?>
 
-    <?php if ($position = strrpos ($innhold, $finn)): ?>
-      <h3 class="title">Nyeste bilder</h3>
-      <?php print (views_embed_view('user_bilder', $display_id='default')); ?>
-    <?php else: ?>
-      <?php print t('Brukeren har ikke enda lastet opp noen bilder'); ?>
-    <?php endif; ?>
+      <?php if ($position = strrpos ($innhold, $finn)): ?>
+        <h3 class="title">Nyeste bilder</h3>
+        <?php print (views_embed_view('user_bilder', $display_id='default')); ?>
+      <?php else: ?>
+        <span class="missing_data"><?php print t('Ingen publiserte bilder'); ?></span>
+      <?php endif; ?>
+    </div>
   </div> <!--user-region1-->
 
   <div id="user-region2" class="clearfix">
