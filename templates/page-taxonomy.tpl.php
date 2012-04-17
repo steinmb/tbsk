@@ -117,6 +117,7 @@
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <link href='http://fonts.googleapis.com/css?family=Tinos' rel='stylesheet' type='text/css'>
 </head>
 <body class="<?php print $classes; ?>">
 
