@@ -59,7 +59,6 @@ html.js fieldset.collapsed {
 .node .fieldgroup {
   padding: 0;
   float: right;
-  width: 298px;
   margin: 0 0 20px 20px;
   border: 1px solid #ACACA6;
   background: #EBECE3;
@@ -98,15 +97,14 @@ html.js fieldset.collapsed {
 
 .field-type-datetime,
 .field-type-date {
-  font-size: 12px;
 }
 
 .fieldgroup.group-info {
-  width: 253px;
+  width: 270px;
   float: right;
-  margin: 0 0 10px 20px;
-  padding:12px 13px 13px 14px;
-  font-size: 12px;
+  margin: 0 0 20px 20px;
+  padding: 12px 13px 13px 14px;
+  font-size: 11px;
 }
 
 .logguser {
@@ -165,4 +163,17 @@ div.fieldgroup .content {
 
 .node-type-event .field-field-artikkelbilde {
   float: left;
+}
+
+.field-field-url {
+  clear: both;
+}
+
+.node .group-weather,
+.node .group-tekniskedata {
+  float: none;
+  background: transparent;
+  width: 100%;
+  margin: 0 0 20px 0;
+  border: 1px solid #ddd;
 }
