@@ -113,25 +113,8 @@ function tbsk_preprocess_page(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-
+/* -- Delete this line if you want to use this function
 function tbsk_preprocess_node(&$vars, $hook) {
-  $node = $vars['node'];
-  if ($node->type == 'loggen') {
-      $bruker = user_load ($vars['uid']);
-      global $base_url, $base_path, $base_root;
-      
-      if ($bruker->profile_real_name):
-        $node->real_name = ('<span class="field-label">Seiler:</span> <a href="' . $base_url . $base_path . 'user/' . $bruker->uid .'">'. $bruker->profile_real_name . '</a>');
-       else:
-        $node->real_name = ('<span class="field-label">Seiler:</span> <a href="' . $base_url . $base_path . 'user/' . $bruker->uid .'">'. $bruker->name . '</a>');
-      endif;
-      
-      if ($bruker->profile_klubb):
-        $node->klubb = ('<br /><span class="field-label">Klubb:</span> ' . $bruker->profile_klubb);
-       else:
-        $node->klubb = ('<br /><span class="field-label">Klubb:</span> Ingen klubb');
-      endif;
-  }
 }
 // */
 
@@ -213,4 +196,27 @@ function tbsk_taxonomy_term_page($tids, $result) {
   }
   $output .= taxonomy_render_nodes($result);
   return $output;
+}
+
+function tbsk_preprocess_fieldgroup_simple(&$vars) {
+  if ($vars['group_name'] == 'group_info') {
+    $node = $vars['element']['#node'];
+    $bruker = user_load($node->uid);
+    global $base_url, $base_path, $base_root;
+
+    if ($bruker->profile_real_name):
+      $real_name = ('<div class="field"><div class="field field-label-inline-first">' . t('Seiler') . ':</div> <a href="' . $base_url . $base_path . 'user/' . $bruker->uid . '">' . check_plain($bruker->profile_real_name) . '</a></div>');
+     else:
+      $real_name = ('<div class="field-label"><div class="field field-label-inline-first">' . t('Seiler') . ':</div><a href="' . $base_url . $base_path . 'user/' . $bruker->uid . '">' . $bruker->name . '</a></div>');
+    endif;
+    
+    if ($bruker->profile_klubb):
+      $klubb = ('<div class="field"><div class="field field-label-inline-first">' . t('Klubb') . ':</div> ' . check_plain($bruker->profile_klubb) . '</div>');
+     else:
+      $klubb = ('<div class="field"><div class="field field-label-inline-first">' . t('Klubb') . ':</div>' . t("Ingen klubb") . '</div>');
+    endif;
+
+    $vars['content'] = $real_name . $klubb . $vars['content'];
+    //dpm($node->uid);
+  }
 }

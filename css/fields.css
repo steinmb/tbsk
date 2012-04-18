@@ -65,7 +65,6 @@ html.js fieldset.collapsed {
 }
 
 .node .fieldgroup .content {
-  padding: 10px 10px 0;
   margin: 0;
 }
   
@@ -99,12 +98,21 @@ html.js fieldset.collapsed {
 .field-type-date {
 }
 
-.fieldgroup.group-info {
-  width: 270px;
-  float: right;
-  margin: 0 0 20px 20px;
-  padding: 12px 13px 13px 14px;
+.fieldgroup.group-info,
+.fieldgroup.group-informasjon,
+.fieldgroup.group-when-where {
+  width: 274px;
+  float: left;
+  margin: 0 20px 20px 0;
+  padding: 12px;
   font-size: 11px;
+}
+
+.fieldgroup h2 {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
 }
 
 .logguser {

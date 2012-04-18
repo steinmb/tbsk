@@ -103,12 +103,6 @@
   <?php endif; ?>
 
   <div class="content clearfix">
-    <?php if ($node->type == 'loggen'): ?>
-      <div class="logguser">
-        <?php print ($node->real_name); ?>
-        <?php print ($node->klubb); ?>
-      </div>
-    <?php endif; ?>
     <?php print $content; ?>
   </div>
   

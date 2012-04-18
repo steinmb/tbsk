@@ -123,10 +123,6 @@
   margin-top: 10px;
 }
 
-.node-type-event .content p {
-  clear: both;
-}
-
 .node-type-event.node-teaser .content p {
   clear: left;
 }
