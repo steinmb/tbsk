@@ -220,3 +220,13 @@ function tbsk_preprocess_fieldgroup_simple(&$vars) {
     //dpm($node->uid);
   }
 }
+
+function tbsk_preprocess_content_field(&$vars) {
+  if ($vars['field_name'] == 'field_artikkelbilde' & $vars['page']) { // Make sure that the field is present and we are viewing full page view.  
+    $element = $vars['element'];
+    if (!$element['items'][0]['#item']['data']['title'] == '') { // Make sure that the title field is not empty.
+      $image_caption = '<div class="image-caption"></div><div class="image-caption-text"><em>' . $element['items'][0]['#item']['data']['title'] . '</em></div>';
+      $vars['items'][0]['view'] = $element['items'][0]['#children'] . $image_caption;
+    }
+  }
+}
