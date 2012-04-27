@@ -128,6 +128,14 @@ td.views-field-field-loggen-fart-value {
 }
 
 /* Jcarousel */
+.jcarousel-next,
+.jcarousel-prev  {
+  background-color: #000;
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+  filter:alpha(opacity=6);
+}
+
 .jcarousel-clip-horizontal ul {
   padding: 0;
   margin: 0;
@@ -171,27 +179,36 @@ td.views-field-field-loggen-fart-value {
 
 /* Panels */
 #mini-panel-forside_karusell .jcarousel-container-horizontal {
-  width: 380px;
+  width: 420px;
+  height: 130px;
+  padding: 20px;
+}
+
+.jcarousel-skin-default .jcarousel-next-horizontal {
+  top: 69px;
 }
 
 #mini-panel-forside_karusell .jcarousel-clip-horizontal {
-  width: 430px;
-  height: 130px;
+  width: inherit;
 }
 
 #mini-panel-forside_karusell .jcarousel-item-horizontal {
-width: 130px;
-  height: 130px;
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.pane-loggen-bilder {
+  width: 460px;
+  float: left;
   margin-right: 20px;
+  background-color: #444;
+  overflow: hidden;
 }
 
-#block-panels_mini-forside_karusell .panel-col-first {
-  width: 507px;
-}
-
-#block-panels_mini-forside_karusell .panel-col-last {
-  width: 243px;
-  float: right;
+.pane-loggen-siste {
+  width: 220px;
+  float: left;
 }
 
 #block-panels_mini-forside_karusell .view-Loggen-rotate {
