@@ -181,12 +181,24 @@ td.views-field-field-loggen-fart-value {
  *
  */
 
+#block-panels_mini-forside_karusell {
+  font-size: 12px;
+  color: #eee;
+  background-color: #000;
+}
+
+#block-panels_mini-forside_karusell table {
+  margin: 0;
+}
+
+#block-panels_mini-forside_karusell .view-footer {
+  padding-left: 10px;
+}
+
 .pane-loggen-bilder {
-  width: 460px;
   float: left;
   margin-right: 20px;
   background-color: #444;
-  overflow: hidden;
 }
 
 .pane-loggen-siste {
@@ -320,18 +332,6 @@ ul.metar_data li {
 
 div#calpopup {
   width: 460px;
-}
-
-#block-panels_mini-forside_karusell table {
-  margin: 0;
-}
-
-#block-panels_mini-forside_karusell {
-  font-size: 12px;
-}
-
-#block-panels_mini-forside_karusell .view-footer {
-  padding-left: 10px;
 }
 
 .item-list {
