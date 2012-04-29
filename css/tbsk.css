@@ -133,6 +133,16 @@ td.views-field-field-loggen-fart-value {
  *
  */
 
+.jcarousel-skin-default .jcarousel-container-horizontal {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+.jcarousel-skin-default .jcarousel-clip-horizontal {
+  width: auto;
+}
+
 .jcarousel-clip-horizontal ul {
   padding: 0;
   margin: 0;
@@ -172,7 +182,7 @@ td.views-field-field-loggen-fart-value {
  ***** Jcarousel og block-styling bare til blokken på forsiden *****
  *
  */
-
+.img-grid,
 #block-panels_mini-forside_karusell {
   font-size: 12px;
   color: #eee;

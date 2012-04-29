@@ -8,3 +8,23 @@
  .views-row-first  td {
    border-top: 1px solid #ddd;
  }
+
+.pane-loggen {
+  margin-bottom: 30px;
+}
+
+.pane-loggen,
+.pane-loggen-personlig {
+  background-color: #2A3D5C;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.pane-loggen .pane-title,
+.pane-loggen-personlig .pane-title {
+  padding: 0 20px;
+}
+
+.page-loggen .item-list {
+  padding-bottom: 10px;
+}
