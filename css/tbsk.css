@@ -133,29 +133,17 @@ td.views-field-field-loggen-fart-value {
  *
  */
 
+.jcarousel-clip-horizontal ul {
+  padding: 0;
+  margin: 0;
+}
+
 .jcarousel-next,
 .jcarousel-prev  {
   background-color: #000;
   opacity: 0.6;
   -moz-opacity: 0.6;
   filter:alpha(opacity=6);
-}
-
-.jcarousel-clip-horizontal ul {
-  padding: 0;
-  margin: 0;
-}
-
-.views_slideshow_singleframe_teaser_section {
-  height: 142px;
-}
-
-.views_slideshow_singleframe_pager.numbered {
-  background: #6699CC;
-  color: #fff;
-  font-family: helvetica;
-  padding: 5px 3px;
-  border: 1px solid #ddd;
 }
 
 .views_slideshow_singleframe_pager.numbered a {
@@ -171,6 +159,18 @@ td.views-field-field-loggen-fart-value {
   top: 69px;
 }
 
+.views_slideshow_singleframe_teaser_section {
+  height: 142px;
+}
+
+.views_slideshow_singleframe_pager.numbered {
+  background: #6699CC;
+  color: #fff;
+  font-family: helvetica;
+  padding: 5px 3px;
+  border: 1px solid #ddd;
+}
+
 #block-panels_mini-forside_karusell .view-Loggen-rotate {
   padding-left: 20px;
 }
@@ -180,6 +180,19 @@ td.views-field-field-loggen-fart-value {
  ***** Jcarousel og block-styling bare til blokken på forsiden *****
  *
  */
+
+.pane-loggen-bilder {
+  width: 460px;
+  float: left;
+  margin-right: 20px;
+  background-color: #444;
+  overflow: hidden;
+}
+
+.pane-loggen-siste {
+  width: 220px;
+  float: left;
+}
 
 #block-panels_mini-forside_karusell .views-field-field-mindag-value p {
   margin: 0;
@@ -218,25 +231,6 @@ td.views-field-field-loggen-fart-value {
 
 #block-panels_mini-forside_karusell .views-field-title {
   text-transform: uppercase;
-}
-
-/*
- *
- ***** Panels *****
- *
- */
-
-.pane-loggen-bilder {
-  width: 460px;
-  float: left;
-  margin-right: 20px;
-  background-color: #444;
-  overflow: hidden;
-}
-
-.pane-loggen-siste {
-  width: 220px;
-  float: left;
 }
 
 /*
