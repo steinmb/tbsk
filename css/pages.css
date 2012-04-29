@@ -18,7 +18,7 @@ body {
   padding: 0;
 }
 
-#page-wrapper {
+.uid-1 #page-wrapper {
   background-image: url(../960.png);
   background-repeat: repeat-y;
 }
