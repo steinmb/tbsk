@@ -72,6 +72,10 @@
   border-bottom: 1px solid #ACACA6;
 }
 
+.node-teaser p {
+  overflow: auto;
+}
+
 /* All nodes are given a node-type-FOO class that describes the type of
  * content that it is. If you create a new content type called
  * "my-custom-type", it will receive a "node-type-my-custom-type" class.
@@ -80,6 +84,13 @@
 }
 
 .node-type-story /* Story content node */ {
+}
+
+.node-type-brettseilerkurs {
+}
+
+.field-field-kursinformasjon {
+  overflow: auto;
 }
 
 .node h2.title /* Node title */ {
