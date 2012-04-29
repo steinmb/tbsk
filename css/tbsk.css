@@ -127,7 +127,12 @@ td.views-field-field-loggen-fart-value {
   font-weight: bold;
 }
 
-/* Jcarousel */
+/* 
+ *
+ ***** Jcarousel global styling *****
+ *
+ */
+
 .jcarousel-next,
 .jcarousel-prev  {
   background-color: #000;
@@ -139,21 +144,6 @@ td.views-field-field-loggen-fart-value {
 .jcarousel-clip-horizontal ul {
   padding: 0;
   margin: 0;
-}
-
-#block-views-loggen_bilder-block_1 .jcarousel-container-horizontal {
-  width: 450px;
-}
-
-#block-views-loggen_bilder-block_1 .jcarousel-clip-horizontal {
-  width: 450px;
-  height: 133px;
-}
-
-#block-views-loggen_bilder-block_1 .jcarousel-item-horizontal {  
-  width: 133px;
-  height: 133px;
-  margin-right: 20px;
 }
 
 .views_slideshow_singleframe_teaser_section {
@@ -177,15 +167,43 @@ td.views-field-field-loggen-fart-value {
   font-size: 18px;
 }
 
-/* Panels */
+.jcarousel-skin-default .jcarousel-next-horizontal {
+  top: 69px;
+}
+
+#block-panels_mini-forside_karusell .view-Loggen-rotate {
+  padding-left: 20px;
+}
+
+/*
+ *
+ ***** Jcarousel og block-styling bare til blokken på forsiden *****
+ *
+ */
+
+#block-panels_mini-forside_karusell .views-field-field-mindag-value p {
+  margin: 0;
+}
+
+#block-views-loggen_bilder-block_1 .jcarousel-container-horizontal {
+  width: 450px;
+}
+
+#block-views-loggen_bilder-block_1 .jcarousel-clip-horizontal {
+  width: 450px;
+  height: 133px;
+}
+
+#block-views-loggen_bilder-block_1 .jcarousel-item-horizontal {  
+  width: 133px;
+  height: 133px;
+  margin-right: 20px;
+}
+
 #mini-panel-forside_karusell .jcarousel-container-horizontal {
   width: 420px;
   height: 130px;
   padding: 20px;
-}
-
-.jcarousel-skin-default .jcarousel-next-horizontal {
-  top: 69px;
 }
 
 #mini-panel-forside_karusell .jcarousel-clip-horizontal {
@@ -197,6 +215,16 @@ td.views-field-field-loggen-fart-value {
   height: auto;
   margin-bottom: 20px;
 }
+
+#block-panels_mini-forside_karusell .views-field-title {
+  text-transform: uppercase;
+}
+
+/*
+ *
+ ***** Panels *****
+ *
+ */
 
 .pane-loggen-bilder {
   width: 460px;
@@ -211,17 +239,11 @@ td.views-field-field-loggen-fart-value {
   float: left;
 }
 
-#block-panels_mini-forside_karusell .view-Loggen-rotate {
-  padding-left: 20px;
-}
-
-#block-panels_mini-forside_karusell .views-field-title {
-  text-transform: uppercase;
-}
-
-#block-panels_mini-forside_karusell .views-field-field-mindag-value p {
-  margin: 0;
-}
+/*
+ *
+ ***** Weather modulen *****
+ *
+ */
 
 .sidebar .weather .image,
 .front .weather .image {
@@ -245,7 +267,12 @@ ul.metar_data li {
   list-style: none;
 }
 
-/* Service link module */
+/*
+ *
+ ***** Service link module *****
+ *
+ */
+
 .service-links {
   font-size: 12px;
   clear: both;
