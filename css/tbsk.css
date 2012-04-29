@@ -10,6 +10,7 @@
  
 thead th {
    background: #EBECE3;
+   color: #333;
    padding: 10px 10px 3px 10px;
    font-size: 14px;
    text-transform: uppercase;
@@ -19,12 +20,11 @@ table td {
   padding: 3px 10px 10px 10px;
 }
 
-tr.even, tr.odd {
-  background: #fff;
-}
-
+tr.even,
+tr.odd,
 td.active {
-  background-color: #fff;
+  background: #fff;
+  color: #333;
 }
 
 table caption {
@@ -146,21 +146,8 @@ td.views-field-field-loggen-fart-value {
   filter:alpha(opacity=6);
 }
 
-.views_slideshow_singleframe_pager.numbered a {
-  color: #fff;
-  text-align: center;
-}
-
-.views_slideshow_singleframe_pager.numbered a.activeSlide {
-  font-size: 18px;
-}
-
 .jcarousel-skin-default .jcarousel-next-horizontal {
   top: 69px;
-}
-
-.views_slideshow_singleframe_teaser_section {
-  height: 142px;
 }
 
 .views_slideshow_singleframe_pager.numbered {
@@ -171,8 +158,13 @@ td.views-field-field-loggen-fart-value {
   border: 1px solid #ddd;
 }
 
-#block-panels_mini-forside_karusell .view-Loggen-rotate {
-  padding-left: 20px;
+.views_slideshow_singleframe_pager.numbered a {
+  color: #fff;
+  text-align: center;
+}
+
+.views_slideshow_singleframe_pager.numbered a.activeSlide {
+  font-size: 18px;
 }
 
 /*
@@ -184,21 +176,22 @@ td.views-field-field-loggen-fart-value {
 #block-panels_mini-forside_karusell {
   font-size: 12px;
   color: #eee;
-  background-color: #000;
+  background-color: #333;
 }
 
 #block-panels_mini-forside_karusell table {
   margin: 0;
 }
 
-#block-panels_mini-forside_karusell .view-footer {
-  padding-left: 10px;
+#mini-panel-forside_karusell .jcarousel-container-horizontal {
+  width: 420px;
+  height: 130px;
+  padding: 20px;
 }
 
 .pane-loggen-bilder {
   float: left;
   margin-right: 20px;
-  background-color: #444;
 }
 
 .pane-loggen-siste {
@@ -223,12 +216,6 @@ td.views-field-field-loggen-fart-value {
   width: 133px;
   height: 133px;
   margin-right: 20px;
-}
-
-#mini-panel-forside_karusell .jcarousel-container-horizontal {
-  width: 420px;
-  height: 130px;
-  padding: 20px;
 }
 
 #mini-panel-forside_karusell .jcarousel-clip-horizontal {
