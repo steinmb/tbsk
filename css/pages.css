@@ -338,3 +338,13 @@ ul.links li {
   overflow: hidden;
   position: absolute;
 }
+
+.top-menu {
+  font-size: 0.75em;
+  background-color: #2A3D5C;
+  color: #fff;
+}
+
+.top-menu .menu a:link {
+  color: #eee;
+}
