@@ -286,6 +286,7 @@ ul.metar_data li {
 
 .service-links img {
   vertical-align: text-bottom;
+  display: inline;
 }
 
 .service-links ul.links {
