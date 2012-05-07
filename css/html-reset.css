@@ -152,6 +152,11 @@ ol {
   padding: 0 0 0 2em; /* LTR */
 }
 
+.top-menu .block ul,
+.top-menu .item-list ul /* Drupal overrides */ {
+  margin: 0;
+}
+
 ul ul, ul ol,
 ol ol, ol ul,
 .block ul ul, .block ul ol,

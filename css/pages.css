@@ -340,6 +340,7 @@ ul.links li {
 }
 
 .top-menu {
+  padding: 5px 20px;
   font-size: 0.75em;
   background-color: #2A3D5C;
   color: #fff;
@@ -347,4 +348,5 @@ ul.links li {
 
 .top-menu .menu a:link {
   color: #eee;
+  background-color: red;
 }

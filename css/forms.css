@@ -132,6 +132,19 @@
   margin-left: -2em; /* LTR */ /* Un-do all of the padding on the ul list. */
 }
 
+.top-menu .form-item,
+.top-menu .form-submit {
+  float: right;
+  margin-left: 40px;
+}
+
+.top-menu .form-item label {
+  display: inline;
+}
+
+#user-login-form .item-list {
+  display: none;
+}
 
 /*
  * Drupal admin tables

@@ -120,9 +120,12 @@
   <link href='http://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
 </head>
 <body class="<?php print $classes; ?>">
-  <div class="top-menu">
-    <?php print $top_menu; ?>
-  </div>
+
+  <?php if ($top_menu): ?>
+    <div class="top-menu clearfix">
+      <?php print $top_menu; ?>
+    </div>
+<?php endif; ?>
 
   <?php if ($primary_links): ?>
     <div id="skip-to-nav"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
