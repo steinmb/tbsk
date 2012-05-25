@@ -294,40 +294,6 @@ ul.metar_data li {
   vertical-align: top;
 }
 
-/* IMCE styling */
-#content-area .defaultSkin table.mceLayout tr.mceFirst td {
-  background: #EBECE3;
-  border-top: 1px solid #ACACA6;
-}
-
-#content-area .defaultSkin table.mceLayout tr.mceLast td {
-  background: #EBECE3;
-}
-
-#content-area .defaultSkin .mceButton {
-  border: 1px solid #ACACA6;
-}
-
-#content-area .defaultSkin a.mceButtonActive, 
-#content-area .defaultSkin a.mceButtonSelected {
-  background-color: #6699CC;
-  border: 1px solid #2A3D5C;
-}
-
-.content .defaultSkin table, 
-.content .defaultSkin tbody, 
-.content .defaultSkin a, 
-.content .defaultSkin img, 
-.content .defaultSkin tr, 
-.content .defaultSkin div, 
-.content .defaultSkin td, 
-.content .defaultSkin iframe, 
-.content .defaultSkin span, 
-.content .defaultSkin *, 
-.content .defaultSkin .mceText {
-  color: #333;
-}
-
 div#calpopup {
   width: 460px;
 }

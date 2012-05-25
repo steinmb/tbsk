@@ -1,0 +1,43 @@
+/*
+ * TinyMCE tilpassinger *
+*/
+
+#tinymce {
+  background-color: #fff;
+  background-image: none;
+  color: #000;
+  height: 100%;
+}
+
+#tinymce li {
+  margin-bottom: 5px;
+}
+
+#tinymce ul,
+#tinymce ol {
+  margin: 10px 20px;
+  padding: 5px 5px 5px 20px;
+  border: 1px solid #eee;
+}
+
+#tinymce li,
+#tinymce p,
+#tinymce h1,
+#tinymce h2,
+#tinymce h3,
+#tinymce h4 {
+  background: #F1F5FC;
+  border: 2px solid #E5ECF9;
+  padding: 5px;
+}
+
+#tinymce div {
+  background: #4E6EA4;
+  color: #fff;
+  border: 2px solid #E5ECF9;
+  padding: 10px;
+}
+
+#tinymce .image-caption-text {
+  color: #fff;
+}
