@@ -147,12 +147,6 @@ function tbsk_preprocess_block(&$vars, $hook) {
 }
 // */
 
-/* function tbsk_preprocess_content_field (&$vars, $hook) {
-  if ($vars['field_name'] == 'field_artikkelbilde_extra') {
-  }
-}
-*/
-
 function tbsk_preprocess_user_profile (&$vars, $hook) {
   $account = $vars['account'];
 
@@ -215,7 +209,6 @@ function tbsk_preprocess_fieldgroup_simple(&$vars) {
     endif;
 
     $vars['content'] = $real_name . $klubb . $vars['content'];
-    //dpm($node->uid);
   }
 }
 
