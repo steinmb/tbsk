@@ -278,15 +278,14 @@ ul.metar_data li {
 
 .service-links {
   font-size: 12px;
-  clear: both;
   background: #EBECE3;
   padding: 10px 20px 5px 20px;
   border-bottom: 1px solid #ACACA6;
 }
 
-.service-links img {
-  vertical-align: text-bottom;
-  display: inline;
+.service-links img,
+.filefield-icon {
+  vertical-align: inherit;
 }
 
 .service-links ul.links {

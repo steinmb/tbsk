@@ -275,6 +275,10 @@ abbr.created /* Date-based "abbreviations" show computer-friendly timestamps whi
  */
 img {
   border: 0;
+  display: inline;
+}
+
+img.imagecache {
   display: block;
 }
 
