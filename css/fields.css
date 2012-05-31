@@ -189,3 +189,30 @@ div.fieldgroup .content {
   background-color: #000;
   color: #DDD;
 }
+
+/* Generelle filer som vi henger på artikkler og pages */
+.field-field-files {
+  background-color: #ededed;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+.field-field-files .field-label {
+  background-color: #4C4C4C;
+  color: #eee;
+  padding: 5px 10px;
+}
+
+.field-field-files a {
+  color: #333;
+}
+
+.field-field-files .field-items {
+  margin: 10px
+}
+
+.field-field-files .field-item {
+  border-bottom: 1px solid #ddd;
+  margin: 5px 0 10px 0;
+}
