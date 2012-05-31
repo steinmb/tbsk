@@ -277,7 +277,6 @@ ul.metar_data li {
  */
 
 .service-links {
-  font-size: 12px;
   background: #EBECE3;
   padding: 10px 20px 5px 20px;
   border-bottom: 1px solid #ACACA6;
@@ -291,6 +290,12 @@ ul.metar_data li {
 .service-links ul.links {
   display: inline;
   vertical-align: top;
+}
+
+.subscriptions-subscribe,
+.service-links,
+.field-field-files {
+  font-size: 12px;
 }
 
 div#calpopup {
