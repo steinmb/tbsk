@@ -1,20 +1,8 @@
-; $Id: tbsk.info.txt,v 1.16.2.1 2009/12/12 15:31:54 johnalbin Exp $
-
-
-  ; The name and description of the theme used on the admin/build/themes page.
 name        = Tromsø Brettseiler Klubb Theme
 description = Ekstremesport theme
-
-  ; The screenshot used on the admin/build/themes page.
-screenshot = screenshot.png
-
-  ; "core" specifies the version of Drupal that this theme is compatible with.
-  ; "base theme" specifies that this is a theme that uses the "zen" theme as its
-  ; base theme. Its unlikely you will ever need to change these, but they are
-  ; required fields for a Zen sub-theme. The "engine" field is not used in a
-  ; sub-theme since the engine is inherited from its base theme.
-core       = 6.x
-base theme = zen
+screenshot  = screenshot.png
+core        = 6.x
+base theme  = zen
 
   ; This section adds CSS files to your theme. The media type is specified in
   ; the brackets. Typical CSS media types include "all", "screen", "print", and
