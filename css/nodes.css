@@ -27,6 +27,8 @@
 
 .node p img {
   margin: 20px 0 10px 0;
+  max-width: 100%;
+  height: 100%;
 }
 
 .build-mode-full .field-field-artikkelbilde,

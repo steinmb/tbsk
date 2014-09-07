@@ -27,8 +27,8 @@ body {
 
 #skip-to-nav,
 #page {
-  font-size: 14px; 
-  line-height: 18px; 
+  font-size: 14px;
+  line-height: 18px;
 }
 
 body,
@@ -280,6 +280,8 @@ img {
 
 img.imagecache {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*
